@@ -15,13 +15,13 @@ if "inited" not in st.session_state:
         "osvesh": [10]
     })
 
-st.write("# Добро пожаловать в Мегасклад")
+st.write("# Добро пожаловать в МегаСклад")
 
 st.title("Тепловая карта склада")
 st.write(f"Средняя температура t = {mean(st.session_state['temperature'][-10:])}°C")
 st.write(f"Средняя влажность {mean(st.session_state['vlazhnost'][-10:])}%")
 uvlazh = st.checkbox("Управление влажностью")
-st.write(f"Средняя освященность {mean(st.session_state['osvesh'][-10:])} лк")
+st.write(f"Средняя освещенность {mean(st.session_state['osvesh'][-10:])} лк")
 svet = st.checkbox("Управление освещением")
 st.image("Rezultativnost-sostavlenija-temperaturnoj-karty.jpg")
 
